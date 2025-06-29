@@ -1,0 +1,118 @@
+/*Reset default browser style*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a simple background and font to the whole page */
+body {
+  font-family: Arial, sans-serif; /* Clean, readable text */
+  background-color: #f4f6f8;      /* Light gray background */
+  color: #333;                    /* Dark gray text */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for all h1 headings */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0077cc;  /* A calm blue for titles */
+}
+
+/*Paragraph text*/
+p{
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+/*Button style*/
+button{
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+button:hover{
+    background-color: #005fa3;   /* Darker blue on hover */;
+}
+
+/* Form layout */
+form{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Label and input spacing */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Radio buttons stay inline */
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Fieldset section */
+fieldset {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+
+/* ========== Responsive Design ========== */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  textarea {
+    font-size: 0.95rem;
+  }
+}

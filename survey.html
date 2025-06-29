@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Feedback Survey</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Campus Feedback Survey</h1>
+    <p>Your feedback is anonymous and help to improve our services</p>
+
+    <form action="thankyou.html" method="get">
+
+        <!-- Optional element-->
+         <label>Name: (optional) </label><br>
+         <input type="text" name="name" id="name"><br><br>
+
+        <!-- Department and year -->
+         <label for="department">Department: </label>   <br> 
+         <select name="department" id="department" required>
+            <option value="">--Select an option--</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Business">Business</option>
+            <option value="Other">Other</option>
+         </select>     <br><br>
+
+         <label for="year">Year of study: </label><br>
+         <select name="year" id="year" required>
+            <option value="">--Select an option--</option>
+            <option value="1st">1st year</option>
+            <option value="2nd">2nd year</option>
+            <option value="3rd">3rd year</option>
+            <option value="4th">4th year</option>
+         </select><br><br>
+
+        <fieldset>
+            <legend>Rate the following (1 - Poor to 5 - Excellent):</legend>
+        
+            <label>Library:</label><br>
+            <input type="radio" name="library" value="1" required>1
+            <input type="radio" name="library" value="2">2
+            <input type="radio" name="library" value="3">3
+            <input type="radio" name="library" value="4">4
+            <input type="radio" name="library" value="5">5<br><br>
+        
+            <label>Wi-Fi:</label><br>
+            <input type="radio" name="wifi" value="1" required>1
+            <input type="radio" name="wifi" value="2">2
+            <input type="radio" name="wifi" value="3">3
+            <input type="radio" name="wifi" value="4">4
+            <input type="radio" name="wifi" value="5">5<br><br>
+        
+            <label>Hostel:</label><br>
+            <input type="radio" name="hostel" value="1" required>1
+            <input type="radio" name="hostel" value="2">2
+            <input type="radio" name="hostel" value="3">3
+            <input type="radio" name="hostel" value="4">4
+            <input type="radio" name="hostel" value="5">5<br><br>
+        
+            <label>Cafeteria:</label><br>
+            <input type="radio" name="cafeteria" value="1" required>1
+            <input type="radio" name="cafeteria" value="2">2
+            <input type="radio" name="cafeteria" value="3">3
+            <input type="radio" name="cafeteria" value="4">4
+            <input type="radio" name="cafeteria" value="5">5<br><br>
+        </fieldset><br>
+
+        <!--Additional comments-->
+        <label for="comments">Additional comments</label><br>
+        <textarea name="comments" id="comments" rows="5" cols="50"></textarea><br><br>
+
+        <!--Submit-->
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
